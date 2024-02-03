@@ -63,7 +63,7 @@ class CNN(nn.Module):
 model = CNN()
 
 # Load the saved state dictionary
-model.load_state_dict(torch.load('model\spill.pth'))
+model.load_state_dict(torch.load('./model/spill.pth'))
 
 crop_size = 128
 loader = transforms.Compose([
